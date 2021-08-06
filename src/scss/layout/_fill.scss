@@ -6,6 +6,12 @@
   .section__list {
     display: flex;
     flex-direction: row;
+    margin: 10px 5px;
+    font-family: $font-open;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $color-texts;
   }
   .section__form {
     display: flex;
