@@ -1,0 +1,20 @@
+.footer__container {
+    height: 20vh;
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--small{
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $font-open;
+        color: #6b6b6b;
+        
+    }
+    &--img{
+        margin-top: 12px;
+        width: 103px;
+        height: 40px;
+    }
+}
