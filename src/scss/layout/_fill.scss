@@ -1,7 +1,9 @@
 .section__container--fill {
-  background-color: palevioletred;
-}
-.section__form {
-  display: flex;
-  flex-direction: column;
+  background-color: pink;
+  border-top: solid 1px $color-borders;
+  border-bottom: solid 1px $color-borders;
+  .section__form {
+    display: flex;
+    flex-direction: column;
+  }
 }
