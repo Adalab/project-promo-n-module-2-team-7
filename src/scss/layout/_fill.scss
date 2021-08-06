@@ -6,17 +6,21 @@
   .section__list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     margin: 10px 5px;
     font-family: $font-open;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
     color: $color-texts;
+    .section__list--title {
+      margin-left: 10px;
+    }
     .section__list--icon {
       color: $color-orange;
     }
     .section__list--button {
-      color: $dark-green-blue;
+      color: $color-texts;
     }
   }
   .section__form {
