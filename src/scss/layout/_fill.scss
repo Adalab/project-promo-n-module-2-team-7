@@ -12,6 +12,12 @@
     font-size: 18px;
     text-transform: uppercase;
     color: $color-texts;
+    .section__list--icon {
+      color: $color-orange;
+    }
+    .section__list--button {
+      color: $dark-green-blue;
+    }
   }
   .section__form {
     display: flex;
