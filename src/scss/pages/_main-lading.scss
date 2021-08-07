@@ -1,5 +1,4 @@
 .section__container{
-   
     background-color: $color-main;
     display: flex;
     flex-direction: column;
@@ -29,12 +28,14 @@
         border-bottom: 1px solid $orange-rectangle;
         border-left: 1px solid $orange-rectangle;
         border-right: 1px solid $orange-rectangle;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        border-radius: 4px;  
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &--icons {
+        list-style-type: none;
+      
     }
     &--button {
         width: 129px;
@@ -43,7 +44,7 @@
         font-family: $font-open;
         font-weight: bold;
         font-size: 16px;
-        background-color: #438792;
+        background-color: $dirty-blue;
         padding: 15px;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -51,4 +52,35 @@
         border-bottom-right-radius: 25px;
         margin: 20px auto 20px auto;
     }
+}
+
+.fa-object-ungroup {
+    margin: 15px auto 3px auto;
+    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $color-orange;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.fa-keyboard {
+    margin: 15px auto 3px auto;
+    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $color-orange;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.fa-share-alt {
+    margin: 15px auto 3px auto;
+    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $color-orange;
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.title-icons{
+    margin: 5px auto auto auto;
+    color: $color-span;
+    font-family: $font-open;
+    font-size: 14px;
 }
