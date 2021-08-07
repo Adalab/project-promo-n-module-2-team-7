@@ -49,10 +49,18 @@
       border: none;
       width: 140px;
       height: 30px;
-      margin: 7px 20px 20px 0;
+      margin-right: 20px;
       padding: 3px 22px 7px;
       border-radius: 3px;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+    .form__choose-image {
+      background-color: powderblue;
+      display: flex;
+      flex-direction: row;
+      .form__input {
+        width: 30px;
+      }
     }
   }
 }
