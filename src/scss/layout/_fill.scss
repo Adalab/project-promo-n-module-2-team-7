@@ -40,5 +40,18 @@
       height: 30px;
       color: $color-placeholder;
     }
+    .form__button {
+      color: $white-two;
+      background-color: $dull-orange;
+      font-size: 14px;
+      line-height: 20px;
+      border: none;
+      width: 140px;
+      height: 30px;
+      margin: 7px 20px 20px 0;
+      padding: 3px 22px 7px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
   }
 }
