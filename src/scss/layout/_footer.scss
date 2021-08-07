@@ -1,20 +1,20 @@
 .footer__container {
-    height: 20vh;
+    height: 20vh; /*le he dado 20 al footer y 80 a la pagina main, pero se puede cambiar*/
     background-color: $color-footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid $white-two;
     &--small{
         font-size: 14px;
         line-height: 20px;
         font-family: $font-open;
-        color: #6b6b6b;
-        
+        color: $brownish-grey;
     }
     &--img{
         margin-top: 12px;
         width: 103px;
-        height: 40px;
+        height: 40px; 
     }
 }
