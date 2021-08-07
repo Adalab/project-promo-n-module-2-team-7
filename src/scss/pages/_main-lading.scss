@@ -1,32 +1,35 @@
 .section__container{
-    height: 80vh;
+   
     background-color: $color-main;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &--title{
-        font-family: $font-title;
+        font-family: $font-merri;
         color: $color-orange;
-        font-size: 25px;
+        font-size: 22px; /*zeplin -> 19.2px pero se ve pequeño*/
         text-align: center;
     }
     &--paragraph{
         font-family: $font-open;
-        font-size: 18px;
+        font-size: 16px; /* zeplin -> 12.8px pero se ve muy pequeño*/
         color: #114e4e;
         text-align: center;
-        margin-bottom: 30px;
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 25px;
     }
     &--rectangle{
         margin-left: auto;
         margin-right: auto;
-        width: 269px;
-        height: 74px;
-        border-top: 1px solid $color-orange;
-        border-bottom: 1px solid $color-orange;
-        border-left: 1px solid $color-orange;
-        border-right: 1px solid $color-orange;
+        width: 275px; /*zeplin el cuadrado es de 268 x 73.8px, se ve pequeño, preguntar si lo podemos hacer mas grandes*/
+        height: 80px;
+        border-top: 1px solid $orange-rectangle; /*le ponemos rgba para poder darle opacidad, porque si se lo pondemos con opacity se pone opaco tambien lo de dentro*/
+        border-bottom: 1px solid $orange-rectangle;
+        border-left: 1px solid $orange-rectangle;
+        border-right: 1px solid $orange-rectangle;
+        border-radius: 4px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
