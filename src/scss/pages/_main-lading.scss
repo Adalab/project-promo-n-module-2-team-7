@@ -6,28 +6,29 @@
     align-items: center;
     &--title{
         font-family: $font-merri;
-        color: $color-orange;
-        font-size: 22px; /*zeplin -> 19.2px pero se ve pequeño*/
+        color: $dull-orange;
+        font-size: 20px; /*zeplin -> 19.2px pero se ve pequeño*/
         text-align: center;
     }
     &--paragraph{
         font-family: $font-open;
-        font-size: 16px; /* zeplin -> 12.8px pero se ve muy pequeño*/
-        color: #114e4e;
+        font-size: 13px; /* zeplin -> 12.8px pero se ve muy pequeño*/
+        color: $dark-green-blue;
+        /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
         text-align: center;
-        margin-left: 28px;
+        margin-left: 27px;
         margin-right: 28px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     &--rectangle{
         margin-left: auto;
         margin-right: auto;
-        width: 275px; /*zeplin el cuadrado es de 268 x 73.8px, se ve pequeño, preguntar si lo podemos hacer mas grandes*/
-        height: 80px;
-        border-top: 1px solid $orange-rectangle; /*le ponemos rgba para poder darle opacidad, porque si se lo pondemos con opacity se pone opaco tambien lo de dentro*/
-        border-bottom: 1px solid $orange-rectangle;
-        border-left: 1px solid $orange-rectangle;
-        border-right: 1px solid $orange-rectangle;
+        width: 268px; /*zeplin el cuadrado es de 268 x 73.8px, se ve pequeño, preguntar si lo podemos hacer mas grandes*/
+        height: 74px;
+        border-top: 2px solid $orange-rectangle; /*le ponemos rgba para poder darle opacidad, porque si se lo pondemos con opacity se pone opaco tambien lo de dentro*/
+        border-bottom: 2px solid $orange-rectangle;
+        border-left: 2px solid $orange-rectangle;
+        border-right: 2px solid $orange-rectangle;
         border-radius: 4px;  
         display: grid;
         grid-template-rows: 50% 50%;
@@ -39,48 +40,46 @@
     }
     &--button {
         width: 129px;
+        height: 42px;
         color: #fff;
         text-transform: uppercase;
         font-family: $font-open;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 16px;
         background-color: $dirty-blue;
-        padding: 15px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        margin: 20px auto 20px auto;
+        border-radius: 20px;
+        border: 1px solid $dirty-blue;
+        margin: 40px auto 30px auto;
     }
 }
 
 .fa-object-ungroup {
     margin: 15px auto 3px auto;
-    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $color-orange;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
     grid-row-start: 1;
     grid-column-start: 1;
 }
 
 .fa-keyboard {
     margin: 15px auto 3px auto;
-    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $color-orange;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
     grid-row-start: 1;
     grid-column-start: 2;
 }
 
 .fa-share-alt {
     margin: 15px auto 3px auto;
-    font-size: 25px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $color-orange;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
     grid-row-start: 1;
     grid-column-start: 3;
 }
 
 .title-icons{
     margin: 5px auto auto auto;
-    color: $color-span;
+    color: $gunmetal;
     font-family: $font-open;
-    font-size: 14px;
+    font-size: 13px;
 }
