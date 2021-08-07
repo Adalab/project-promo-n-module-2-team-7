@@ -8,14 +8,14 @@
             <li class="section__list--button"><i class="fas fa-chevron-down"></i><a href="" ></a></img></li>
         </ul>
     </nav>
-    <form class="section__form" action="/" method="POST">
+    <form id="section__form" class="section__form" action="/" method="POST">
         <label class="form__label" for="fullName">Nombre completo</label>
         <input class="form__input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
         <label class="form__label" for="jobPosition">Puesto</label>
         <input class="form__input" placeholder="Ej: Front-end unicorn" id="jobPosition" type="text" name="jobPosition">
         <label class="form__label" for="">Imagen de perfil</label>
         <!-- idk what happens with this button -->
-        Añadir imagen
+        <button form="section__form" name=add-image value="/">Añadir imagen</button>
         <label class="form__label" for="email">Email</label>
         <input class="form__input" placeholder="Ej: sally.hill@gmail.com" id="email" type="email" name="email">
         <label class="form__label" for="phone">Teléfono</label>
