@@ -5,29 +5,29 @@
     rgba(191, 205, 208, 1) 100%
   );
   width: 100%;
-  height: 485px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__button {
-    font-family: "Open Sans", sans-serif;
-    color: #54585a;
+    font-family: $font-open;
+    color: $gunmetal;
     text-transform: uppercase;
-    border: solid white 2px;
+    border: solid $color-white 2px;
     border-radius: 22.5px;
     padding: 4px 12px 6px 0px;
     background-color: transparent;
     margin: 38px 200px 20px 45px;
     &:hover {
-      background-color: #ffffff;
+      background-color: $color-white;
     }
     i {
       margin: 0px 8px 0px 10px;
     }
   }
   &__section {
-    background-color: white;
+    background-color: $color-white;
     margin-bottom: 40px;
     height: 340px;
     width: 240px;
@@ -40,10 +40,10 @@
     //<---animation--->
 
     &--article {
-      font-family: "Montserrat", sans-serif;
+      font-family: $font-mont;
       line-height: 20px;
       &--rectangle {
-        background-color: #438792;
+        background-color: $dirty-blue;
         position: absolute;
         height: 42px;
         width: 5px;
@@ -52,13 +52,13 @@
       &--name {
         margin: 21px 14px 0px 20px;
         font-weight: 700;
-        color: #114e4e;
+        color: $color-name;
         text-transform: capitalize;
         font-size: 18px;
       }
       &--text {
         font-weight: 500;
-        color: #54585a;
+        color: $gunmetal;
         margin: 4px 52px 10px 20px;
         font-size: 16px;
       }
@@ -68,13 +68,13 @@
       width: 240px;
     }
     &--media {
-      background-color: white;
+      background-color: $color-white;
       display: flex;
       justify-content: space-evenly;
       margin: 10px 62px 12px 20px;
       i {
-        color: #114e4e;
-        border: solid 2px #a2deaf;
+        color: $color-name;
+        border: solid 2px $hospital-green;
         border-radius: 22.5px;
       }
     }
@@ -83,25 +83,25 @@
     padding: 7px 10px 7px 10px;
 
     &:hover {
-      background-color: #a2deaf;
+      background-color: $hospital-green;
     }
   }
   #email {
     padding: 7px;
     &:hover {
-      background-color: #a2deaf;
+      background-color: $hospital-green;
     }
   }
   #linkedin {
     padding: 8px;
     &:hover {
-      background-color: #a2deaf;
+      background-color: $hospital-green;
     }
   }
   #github {
     padding: 8px 7.5px 6px 7.5px;
     &:hover {
-      background-color: #a2deaf;
+      background-color: $hospital-green;
     }
   }
 }
