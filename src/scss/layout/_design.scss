@@ -1,0 +1,123 @@
+.design__form {
+  margin: 27px 20px 30px 20px;
+
+  text-transform: uppercase;
+  font-family: $font-open;
+  color: $color-texts;
+  box-sizing: border-box;
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; para display flex*/
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 54px 1fr 1fr 1fr;
+
+  &--tittle {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /*border-bottom: solid 1px $white-two; borde menu cerrado*/
+    /*width: 100%;  
+    margin: 0;
+    padding: 0; para display flex*/
+    font-size: 18px;
+    font-weight: 600;
+
+    .design {
+      transform: scale(0.9);
+      margin-right: 9px;
+    }
+  }
+  &--colors {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    /* width: 60%;
+    height: 115px; para display flex */
+    font-size: 14px;
+    padding-left: 19px;
+  }
+  &--ranges {
+    /*width: 40%;
+    height: 115px; para display flex */
+    grid-column: 2/3;
+    grid-row: 2/5;
+
+    .label-1 {
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      height: 25px;
+      #range-1 {
+        width: 36px;
+      }
+      .box-1 {
+        background-color: $dark-green-blue;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $dirty-blue;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $hospital-green;
+        width: 30px;
+        height: 25px;
+      }
+    }
+
+    .label-2 {
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      height: 25px;
+      #range-2 {
+        width: 36px;
+      }
+      .box-1 {
+        background-color: $dried-blood;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $rusty-red;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $tomato;
+        width: 30px;
+        height: 25px;
+      }
+    }
+    .label-3 {
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+
+      height: 25px;
+      #range-3 {
+        width: 36px;
+      }
+      .box-1 {
+        background-color: $slate;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $faded-orange;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $light-grey-blue;
+        width: 30px;
+        height: 25px;
+      }
+    }
+  }
+}
