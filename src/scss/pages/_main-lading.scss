@@ -34,10 +34,33 @@
         grid-template-rows: 50% 50%;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    &--icons {
-        list-style-type: none;
-      
+    &--main--design{
+        margin: 15px auto 3px auto;
+        font-size: 23px; /*zeplin dice 22*/
+        color: $dull-orange;
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
+    &--main--fill {
+        margin: 15px auto 3px auto;
+        font-size: 23px; /*zeplin dice 22*/
+        color: $dull-orange;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    &--main--share{
+        margin: 15px auto 3px auto;
+        font-size: 23px; /*zeplin dice 22*/
+        color: $dull-orange;
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+    &--title-icons {
+        margin: 5px auto auto auto;
+        color: $gunmetal;
+        font-family: $font-open;
+        font-size: 13px;
+    } 
     &--button {
         width: 129px;
         height: 42px;
@@ -51,35 +74,4 @@
         border: 1px solid $dirty-blue;
         margin: 40px auto 30px auto;
     }
-}
-
-.section__container--main--design {
-    margin: 15px auto 3px auto;
-    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $dull-orange;
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-.section__container--main--fill {
-    margin: 15px auto 3px auto;
-    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $dull-orange;
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-
-.section__container--main--share {
-    margin: 15px auto 3px auto;
-    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
-    color: $dull-orange;
-    grid-row-start: 1;
-    grid-column-start: 3;
-}
-
-.title-icons{
-    margin: 5px auto auto auto;
-    color: $gunmetal;
-    font-family: $font-open;
-    font-size: 13px;
 }
