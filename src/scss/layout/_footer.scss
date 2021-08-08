@@ -6,6 +6,13 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid $white-two;
+    @media all and (min-width: 768px) {
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 41px;
+        margin-right: 40px;
+    }
     &--small{
         font-size: 14px;
         line-height: 20px;
