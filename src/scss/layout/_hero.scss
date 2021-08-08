@@ -12,21 +12,49 @@
   justify-content: center;
   align-items: center;
   &__button {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
     border: solid white 2px;
+    border-radius: 22.5px;
+    padding: 5px;
     background-color: transparent;
+    align-content: flex-start;
+    i {
+      margin: 0px 8px 0px 10px;
+    }
   }
   &__section {
     background-color: white;
     height: 329px;
     width: 240px;
+    display: flex;
+    flex-direction: column;
+
+    &--article {
+      font-family: "Montserrat", sans-serif;
+      &--name {
+        font-weight: 700;
+        color: #114e4e;
+      }
+      &--text {
+        font-weight: 400;
+      }
+    }
     &--img {
       height: 200px;
-      width: 200px;
+      width: 240px;
     }
     &--media {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
       i {
-        border: solid #a2deaf 2 px;
+        margin: 10px;
+        color: #114e4e;
+        border: solid 2px #a2deaf;
         border-radius: 22.5px;
+        padding: 8px;
       }
     }
   }
