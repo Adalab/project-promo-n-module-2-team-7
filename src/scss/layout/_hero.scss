@@ -1,5 +1,4 @@
 .hero {
-  background: rgb(221, 233, 237);
   background: linear-gradient(
     0deg,
     rgba(221, 233, 237, 1) 35%,
@@ -16,9 +15,10 @@
     text-transform: uppercase;
     border: solid white 2px;
     border-radius: 22.5px;
-    padding: 5px;
+    padding: 4px 12px 6px 0px;
     background-color: transparent;
     align-content: flex-start;
+    margin: 38px 200px 20px 45px;
     i {
       margin: 0px 8px 0px 10px;
     }
@@ -32,12 +32,25 @@
 
     &--article {
       font-family: "Montserrat", sans-serif;
+      line-height: 20px;
+      &--rectangle {
+        background-color: #114e4e;
+        position: absolute;
+        height: 42px;
+        width: 5px;
+        margin: 23px 0px 5px 0px;
+      }
       &--name {
+        margin: 21px 14px 0px 20px;
         font-weight: 700;
         color: #114e4e;
+        font-size: 18px;
       }
       &--text {
         font-weight: 400;
+        color: #54585a;
+        margin: 4px 52px 10px 20px;
+        font-size: 16px;
       }
     }
     &--img {
