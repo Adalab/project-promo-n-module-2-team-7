@@ -9,6 +9,9 @@
         color: $dull-orange;
         font-size: 20px; /*zeplin -> 19.2px pero se ve pequeño*/
         text-align: center;
+        @media all and (min-width: 768px) {
+            font-size: 24px;
+        }
     }
     &--paragraph{
         font-family: $font-open;
@@ -19,6 +22,10 @@
         margin-left: 27px;
         margin-right: 28px;
         margin-bottom: 20px;
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+            margin: 0 218px 27px 218px;
+        }
     }
     &--rectangle{
         margin-left: auto;
@@ -33,6 +40,10 @@
         display: grid;
         grid-template-rows: 50% 50%;
         grid-template-columns: 1fr 1fr 1fr;
+        @media all and (min-width: 768px) {
+            width: 325px;
+            height: 86px;
+        }
     }
     &--main--design{
         margin: 15px auto 3px auto;
@@ -40,6 +51,9 @@
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 1;
+        @media all and (min-width: 768px) {
+            font-size: 28px;
+        }
     }
     &--main--fill {
         margin: 15px auto 3px auto;
@@ -47,6 +61,9 @@
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 2;
+        @media all and (min-width: 768px) {
+            font-size: 28px;
+        }
     }
     &--main--share{
         margin: 15px auto 3px auto;
@@ -54,12 +71,18 @@
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 3;
+        @media all and (min-width: 768px) {
+            font-size: 28px;
+        }
     }
     &--title-icons {
         margin: 5px auto auto auto;
         color: $gunmetal;
         font-family: $font-open;
         font-size: 13px;
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+        }
     } 
     &--button {
         width: 129px;
@@ -73,5 +96,8 @@
         border-radius: 20px;
         border: 1px solid $dirty-blue;
         margin: 40px auto 30px auto;
+        @media all and (min-width: 768px) {
+            margin: 186px auto 59px auto;
+        }
     }
 }
