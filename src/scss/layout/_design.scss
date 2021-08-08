@@ -1,0 +1,48 @@
+.design__form {
+  border: solid yellow;
+  text-transform: uppercase;
+  font-family: $font-open;
+  color: $color-texts;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  &--tittle {
+    border: solid blue;
+    width: 100%;
+  }
+  &--colors {
+    border: solid green;
+    width: 50%;
+    height: 115px;
+  }
+  &--ranges {
+    border: solid purple;
+    width: 50%;
+    height: 115px;
+
+    .label-1 {
+      border: solid red;
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+      grid-row: 1fr;
+      height: 40px;
+      .box-1 {
+        background-color: $dark-green-blue;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $dirty-blue;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $hospital-green;
+        width: 30px;
+        height: 25px;
+      }
+    }
+  }
+}
