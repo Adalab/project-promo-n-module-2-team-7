@@ -1,6 +1,5 @@
 .design__form {
   margin: 27px 20px 30px 20px;
-  border: solid yellow;
   text-transform: uppercase;
   font-family: $font-open;
   color: $color-texts;
@@ -9,26 +8,24 @@
   flex-wrap: wrap;
   flex-direction: row;
   &--tittle {
-    border: solid blue;
     width: 100%;
     font-size: 18px;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
+
     .design {
-      border: solid pink;
-      transform: scale(0.8);
       width: 21px;
       height: 18px;
     }
   }
   &--colors {
-    border: solid green;
     width: 60%;
     height: 115px;
     font-size: 14px;
     padding-left: 19px;
   }
   &--ranges {
-    border: solid purple;
     width: 40%;
     height: 115px;
 
