@@ -1,4 +1,5 @@
 .design__form {
+  margin: 27px 20px 30px 20px;
   border: solid yellow;
   text-transform: uppercase;
   font-family: $font-open;
@@ -10,24 +11,37 @@
   &--tittle {
     border: solid blue;
     width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    .design {
+      border: solid pink;
+      transform: scale(0.8);
+      width: 21px;
+      height: 18px;
+    }
   }
   &--colors {
     border: solid green;
-    width: 50%;
+    width: 60%;
     height: 115px;
+    font-size: 14px;
+    padding-left: 19px;
   }
   &--ranges {
     border: solid purple;
-    width: 50%;
+    width: 40%;
     height: 115px;
 
     .label-1 {
-      border: solid red;
       display: flex;
       flex-wrap: row;
       align-items: center;
-      grid-row: 1fr;
-      height: 40px;
+      margin-bottom: 20px;
+
+      height: 25px;
+      #range-1 {
+        width: 30px;
+      }
       .box-1 {
         background-color: $dark-green-blue;
         width: 30px;
@@ -40,6 +54,58 @@
       }
       .box-3 {
         background-color: $hospital-green;
+        width: 30px;
+        height: 25px;
+      }
+    }
+
+    .label-2 {
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      height: 25px;
+      #range-2 {
+        width: 30px;
+      }
+      .box-1 {
+        background-color: $dried-blood;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $rusty-red;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $tomato;
+        width: 30px;
+        height: 25px;
+      }
+    }
+    .label-3 {
+      display: flex;
+      flex-wrap: row;
+      align-items: center;
+
+      height: 25px;
+      #range-3 {
+        width: 30px;
+      }
+      .box-1 {
+        background-color: $slate;
+        width: 30px;
+        height: 25px;
+      }
+      .box-2 {
+        background-color: $faded-orange;
+        width: 30px;
+        height: 25px;
+      }
+      .box-3 {
+        background-color: $light-grey-blue;
         width: 30px;
         height: 25px;
       }
