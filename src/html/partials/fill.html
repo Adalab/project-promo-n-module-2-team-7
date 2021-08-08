@@ -1,0 +1,31 @@
+<section class="section__container--fill">
+    <nav>
+        <ul class="section__list">
+            <li><i class="far fa-keyboard section__list--icon"></i></li>
+            <li>
+                <h2 class="section__list--title">Rellena</h2>
+            </li>
+            <li class="section__list--button"><i class="fas fa-chevron-down"></i><a href="" ></a></img></li>
+        </ul>
+    </nav>
+    <form id="section__form" class="section__form" action="/" method="POST">
+        <label class="form__label" for="fullName">Nombre completo</label>
+        <input class="form__input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
+        <label class="form__label" for="jobPosition">Puesto</label>
+        <input class="form__input" placeholder="Ej: Front-end unicorn" id="jobPosition" type="text" name="jobPosition">
+        <label class="form__label" for="">Imagen de perfil</label>
+        <fieldset class="form__choose-image">   
+            <!-- idk what happens with this button and with this input -->
+            <button class="form__button" form="section__form" name=add-image>Añadir imagen</button>
+            <input class="form__input" type="">
+        </fieldset>
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" placeholder="Ej: sally.hill@gmail.com" id="email" type="email" name="email">
+        <label class="form__label" for="phone">Teléfono</label>
+        <input class="form__input" placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
+        <label class="form__label" for="linkedin">Linkedin</label>
+        <input class="form__input" placeholder="Ej: linkedin.com/sally-hill" id="linkedin" type="text" name="linkedin">
+        <label class="form__label" for="github">Github</label>
+        <input class="form__input" placeholder="Ej: @sally-hill" id="github" type="text" name="github">
+    </form>
+</section>

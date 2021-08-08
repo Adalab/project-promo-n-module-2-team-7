@@ -1,0 +1,85 @@
+.section__container{
+    background-color: $color-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--title{
+        font-family: $font-merri;
+        color: $dull-orange;
+        font-size: 20px; /*zeplin -> 19.2px pero se ve pequeño*/
+        text-align: center;
+    }
+    &--paragraph{
+        font-family: $font-open;
+        font-size: 13px; /* zeplin -> 12.8px pero se ve muy pequeño*/
+        color: $dark-green-blue;
+        /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
+        text-align: center;
+        margin-left: 27px;
+        margin-right: 28px;
+        margin-bottom: 20px;
+    }
+    &--rectangle{
+        margin-left: auto;
+        margin-right: auto;
+        width: 268px; /*zeplin el cuadrado es de 268 x 73.8px, se ve pequeño, preguntar si lo podemos hacer mas grandes*/
+        height: 74px;
+        border-top: 2px solid $orange-rectangle; /*le ponemos rgba para poder darle opacidad, porque si se lo pondemos con opacity se pone opaco tambien lo de dentro*/
+        border-bottom: 2px solid $orange-rectangle;
+        border-left: 2px solid $orange-rectangle;
+        border-right: 2px solid $orange-rectangle;
+        border-radius: 4px;  
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &--icons {
+        list-style-type: none;
+      
+    }
+    &--button {
+        width: 129px;
+        height: 42px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $font-open;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: $dirty-blue;
+        border-radius: 20px;
+        border: 1px solid $dirty-blue;
+        margin: 40px auto 30px auto;
+    }
+}
+
+.design {
+    margin: 15px auto 3px auto;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.fill {
+    margin: 15px auto 3px auto;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.share {
+    margin: 15px auto 3px auto;
+    font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.title-icons{
+    margin: 5px auto auto auto;
+    color: $gunmetal;
+    font-family: $font-open;
+    font-size: 13px;
+}
