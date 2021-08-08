@@ -53,7 +53,7 @@
     }
 }
 
-.design {
+.section__container--main--design {
     margin: 15px auto 3px auto;
     font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
     color: $dull-orange;
@@ -61,7 +61,7 @@
     grid-column-start: 1;
 }
 
-.fill {
+.section__container--main--fill {
     margin: 15px auto 3px auto;
     font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
     color: $dull-orange;
@@ -69,7 +69,7 @@
     grid-column-start: 2;
 }
 
-.share {
+.section__container--main--share {
     margin: 15px auto 3px auto;
     font-size: 23px; /*zeplin dice 22 yo le he puesto 25px*/
     color: $dull-orange;
