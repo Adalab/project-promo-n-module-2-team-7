@@ -19,6 +19,9 @@
     padding: 4px 12px 6px 0px;
     background-color: transparent;
     margin: 38px 200px 20px 45px;
+    &:hover {
+      background-color: #ffffff;
+    }
     i {
       margin: 0px 8px 0px 10px;
     }
@@ -40,7 +43,7 @@
       font-family: "Montserrat", sans-serif;
       line-height: 20px;
       &--rectangle {
-        background-color: #114e4e;
+        background-color: #438792;
         position: absolute;
         height: 42px;
         width: 5px;
@@ -78,14 +81,27 @@
   }
   #mobile {
     padding: 7px 10px 7px 10px;
+
+    &:hover {
+      background-color: #a2deaf;
+    }
   }
   #email {
     padding: 7px;
+    &:hover {
+      background-color: #a2deaf;
+    }
   }
   #linkedin {
     padding: 8px;
+    &:hover {
+      background-color: #a2deaf;
+    }
   }
   #github {
     padding: 8px 7.5px 6px 7.5px;
+    &:hover {
+      background-color: #a2deaf;
+    }
   }
 }
