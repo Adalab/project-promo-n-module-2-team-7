@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 1fr;
-    margin: 13px 0 5px 0;
+    margin: 10px 0 5px 0;
     font-family: $font-open;
     font-weight: 600;
     font-size: 18px;
@@ -48,8 +48,8 @@
       height: 30px;
       color: $color-placeholder;
     }
-    .form__button {
-      color: #ffffff;
+    .choose__image--button {
+      color: $color-white;
       background-color: $dull-orange;
       font-family: $font-open;
       font-size: 14px;
@@ -62,11 +62,13 @@
       border-radius: 3px;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     }
-    .form__choose-image {
-      background-color: powderblue;
+    .form__choose--image {
+      // background-color: powderblue;
       display: flex;
       flex-direction: row;
-      .form__input {
+      .choose__image--preview {
+        border: $hospital-green solid 1px;
+        background-color: $color-white;
         width: 30px;
       }
     }
