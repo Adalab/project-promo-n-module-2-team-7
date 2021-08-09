@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   flex-direction: row; para display flex*/
   display: grid;
-  grid-template-columns: 10% 50% 40%;
+  grid-template-columns: 28px 50% 40%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   font-size: 18px;
   font-weight: 600;
@@ -54,8 +54,11 @@
       flex-wrap: row;
       align-items: center;
       margin-bottom: 20px;
-
       height: 25px;
+      @media all and (min-width: 768px) {
+        justify-content: right;
+      }
+
       #range-1 {
         width: 36px;
       }
