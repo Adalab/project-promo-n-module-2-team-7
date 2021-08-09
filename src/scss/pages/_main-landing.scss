@@ -1,5 +1,9 @@
+.page{
+    height: 60vh;
+}
+
 .section__container{
-    height: 80%;
+    height: 100%;
     background-color: $color-main;
     display: flex;
     flex-direction: column;
@@ -8,7 +12,7 @@
     &--title{
         font-family: $font-merri;
         color: $dull-orange;
-        font-size: 20px; /*zeplin -> 19.2px pero se ve pequeño*/
+        font-size: 20px; 
         text-align: center;
         @media all and (min-width: 768px) {
             font-size: 24px;
@@ -16,7 +20,7 @@
     }
     &--paragraph{
         font-family: $font-open;
-        font-size: 13px; /* zeplin -> 12.8px pero se ve muy pequeño*/
+        font-size: 13px; 
         color: $dark-green-blue;
         /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
         text-align: center;
@@ -31,9 +35,9 @@
     &--rectangle{
         margin-left: auto;
         margin-right: auto;
-        width: 268px; /*zeplin el cuadrado es de 268 x 73.8px, se ve pequeño, preguntar si lo podemos hacer mas grandes*/
+        width: 268px; 
         height: 74px;
-        border-top: 2px solid $orange-rectangle; /*le ponemos rgba para poder darle opacidad, porque si se lo pondemos con opacity se pone opaco tambien lo de dentro*/
+        border-top: 2px solid $orange-rectangle; 
         border-bottom: 2px solid $orange-rectangle;
         border-left: 2px solid $orange-rectangle;
         border-right: 2px solid $orange-rectangle;
@@ -48,7 +52,7 @@
     }
     &--main--design{
         margin: 15px auto 3px auto;
-        font-size: 23px; /*zeplin dice 22*/
+        font-size: 23px; 
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 1;
@@ -58,7 +62,7 @@
     }
     &--main--fill {
         margin: 15px auto 3px auto;
-        font-size: 23px; /*zeplin dice 22*/
+        font-size: 23px; 
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 2;
@@ -68,7 +72,7 @@
     }
     &--main--share{
         margin: 15px auto 3px auto;
-        font-size: 23px; /*zeplin dice 22*/
+        font-size: 23px; 
         color: $dull-orange;
         grid-row-start: 1;
         grid-column-start: 3;
