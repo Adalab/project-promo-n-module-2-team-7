@@ -3,12 +3,16 @@
   border-top: solid 1px $color-borders;
   border-bottom: solid 1px $color-borders;
   padding-bottom: 30px;
+  padding-top: 10px;
   margin: 0 20px;
+  @media all and (min-width: 768px) {
+    margin: 0 30px 0 40px;
+  }
   .fill__header {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 1fr;
-    margin: 10px 0 5px 0;
+    margin-bottom: 5px;
     font-family: $font-open;
     font-weight: 600;
     font-size: 18px;
