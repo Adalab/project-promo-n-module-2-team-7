@@ -8,7 +8,7 @@
     display: inline-block;
     width: 100%;
   }
-  .section__header {
+  .fill__header {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 1fr;
@@ -19,24 +19,24 @@
     font-size: 18px;
     text-transform: uppercase;
     color: $color-texts;
-    .section__header--text {
+    .fill__header--text {
       grid-column: 1 / 2;
       display: flex;
       flex-direction: row;
-      .section__header--title {
+      .fill__header--title {
         margin-left: 10px;
       }
-      .section__header--icon {
+      .fill__header--icon {
         color: $dull-orange;
       }
     }
-    .section__header--button {
+    .fill__header--button {
       grid-column: 2 / 3;
       justify-self: end;
       color: $color-texts;
     }
   }
-  .section__form {
+  .fill__form {
     display: flex;
     flex-direction: column;
     color: $dark-green-blue;
