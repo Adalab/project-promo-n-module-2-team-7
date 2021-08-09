@@ -3,23 +3,32 @@
   border-top: solid 1px $color-borders;
   border-bottom: solid 1px $color-borders;
   padding-bottom: 30px;
-  .section__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  .section__list1 {
+    background-color: peru;
+    display: inline-block;
+    width: 100%;
+  }
+  .section__header {
+    background-color: palegreen;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
     margin: 10px 5px;
     font-family: $font-open;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
     color: $color-texts;
-    .section__list--title {
+    .section__header--title {
       margin-left: 10px;
     }
-    .section__list--icon {
+    .section__header--icon {
       color: $dull-orange;
     }
-    .section__list--button {
+    .section__header--button {
       color: $color-texts;
     }
   }
