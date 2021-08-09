@@ -1,5 +1,6 @@
 .design__form {
-  margin: 27px 20px 30px 20px;
+  padding: 27px 20px 30px 20px;
+  background-color: $color-main;
   text-transform: uppercase;
   font-family: $font-open;
   color: $color-texts;
@@ -12,6 +13,8 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   font-size: 18px;
   font-weight: 600;
+  border-bottom: solid 1px $white-two;
+
   &--tittle {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -48,6 +51,8 @@
     height: 115px; para display flex */
     grid-column: 3/4;
     grid-row: 2/5;
+    width: 100%;
+    text-align: center;
 
     .label-1 {
       display: flex;
@@ -55,9 +60,8 @@
       align-items: center;
       margin-bottom: 20px;
       height: 25px;
-      @media all and (min-width: 768px) {
-        justify-content: right;
-      }
+      text-align: center;
+      width: 100%;
 
       #range-1 {
         width: 36px;
