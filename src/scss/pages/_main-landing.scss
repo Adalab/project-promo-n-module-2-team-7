@@ -34,7 +34,10 @@
         margin: 0 28px 25px 27px;
         @media all and (min-width: 768px) {
             font-size: 16px;
-            margin: 0 218px 27px 218px;
+            margin: 0 218px 50px 218px;
+        }
+        @media all and (min-width: 768px) {
+            margin: 0 218px 20px 218px;
         }
     }
     &--rectangle{
@@ -107,7 +110,10 @@
         border: 1px solid $dirty-blue;
         margin: 50px auto 0px auto;
         @media all and (min-width: 768px) {
-            margin: 186px auto 59px auto;
+            margin: 200px auto 59px auto;
+        }
+        @media all and (min-width:768px) {
+            margin: 100px auto 59px auto;
         }
     }
 }
