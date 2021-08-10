@@ -1,5 +1,8 @@
 .page{
     height: 60%;
+    @media all and (min-width: 768px){
+        height: 70%;
+    }
 }
 
 .section__container{
@@ -9,6 +12,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media all and (min-width: 768px) {
+        justify-content: flex-end;
+    }
     &--title{
         font-family: $font-merri;
         color: $dull-orange;
