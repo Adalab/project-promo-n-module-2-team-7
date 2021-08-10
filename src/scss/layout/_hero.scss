@@ -10,6 +10,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 812px;
+    border-radius: 6px;
+    border-radius: 6px;
+    align-self: center;
+    justify-self: center;
+    width: 368px;
+  }
   &__button {
     font-family: $font-open;
     color: $gunmetal;

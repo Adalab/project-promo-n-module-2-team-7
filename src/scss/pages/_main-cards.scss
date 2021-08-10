@@ -11,11 +11,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 60% 20%;
   }
-  .hero {
-    grid-column: 2/3;
-    grid-row: 1/4;
-    height: 100%;
-  }
+
   .profilecards__section--design {
     grid-column: 1/2;
     grid-row: 1/2;
