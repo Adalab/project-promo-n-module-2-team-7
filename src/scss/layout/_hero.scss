@@ -20,6 +20,9 @@
     justify-self: center;
     width: 368px;
   }
+  @media all and (min-width: 1200px) {
+    width: 585px;
+  }
   &__button {
     font-family: $font-open;
     color: $gunmetal;
