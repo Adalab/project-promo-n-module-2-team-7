@@ -12,6 +12,11 @@
             height: 105px;
             margin: 300px 174px 31px 174px; 
         }
+        @media all and (min-width:1200px) {
+            width: 419px;
+            height: 105px;
+            margin: 100px auto 31px auto; 
+        }
     }
 }
 
