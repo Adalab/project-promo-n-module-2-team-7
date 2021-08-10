@@ -14,19 +14,18 @@
         color: $dull-orange;
         font-size: 20px; 
         text-align: center;
+        margin-bottom: 5px;
         @media all and (min-width: 768px) {
             font-size: 24px;
         }
     }
     &--paragraph{
         font-family: $font-open;
-        font-size: 13px; 
+        font-size: 14px; 
         color: $dark-green-blue;
         /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
         text-align: center;
-        margin-left: 27px;
-        margin-right: 28px;
-        margin-bottom: 20px;
+        margin: 0 28px 25px 27px;
         @media all and (min-width: 768px) {
             font-size: 16px;
             margin: 0 218px 27px 218px;
@@ -100,7 +99,7 @@
         background-color: $dirty-blue;
         border-radius: 20px;
         border: 1px solid $dirty-blue;
-        margin: 40px auto 30px auto;
+        margin: 50px auto 0px auto;
         @media all and (min-width: 768px) {
             margin: 186px auto 59px auto;
         }
