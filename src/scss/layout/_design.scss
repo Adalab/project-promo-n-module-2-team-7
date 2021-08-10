@@ -51,8 +51,8 @@
     height: 115px; para display flex */
     grid-column: 3/4;
     grid-row: 2/5;
-    width: 100%;
-    text-align: center;
+    /*width: 100%;*/
+    justify-self: end;
 
     .label-1 {
       display: flex;
