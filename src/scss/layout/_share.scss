@@ -1,30 +1,27 @@
 .profilecards__section--share {
   border-bottom: solid 1px $white-two;
-  padding: 27px 20px 30px 20px;
-  background-color: $color-main;
-  height: 145px;
+  margin: 27px 20px 30px 20px;
   text-transform: uppercase;
   font-family: $font-open;
+  color: $color-texts;
   font-size: 18px;
   font-weight: 600;
-  color: $color-texts;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 28px 1fr 1fr;
-  grid-template-rows: 34px 142px;
-
+  grid-template-rows: 1fr 1fr;
+  @media all and (min-width: 768px) {
+    margin: 27px 30px 0px 40px;
+  }
   .share {
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 18px;
-    margin-top: 10px;
     color: $dull-orange;
   }
 
   .share__title {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 10px;
   }
   .fa-chevron-up {
     grid-column: 3/4;
@@ -47,7 +44,8 @@
     border-style: none;
     grid-column: 1/4;
     grid-row: 2/3;
-    margin: 30px auto 30px auto;
+    justify-self: center;
+    margin-bottom: 30px;
     transition: background-color 0.5s ease;
   }
   .share__button:active {
