@@ -36,6 +36,9 @@
     &:hover {
       background-color: $color-white;
     }
+    &:active {
+      background-color: $color-placeholder;
+    }
     i {
       margin: 0px 8px 0px 10px;
     }
@@ -84,8 +87,9 @@
     &--media {
       background-color: $color-white;
       display: flex;
-      justify-content: space-evenly;
-      margin: 10px 62px 12px 20px;
+      justify-content: flex-start;
+      margin: 10px 62px 12px 10px;
+
       i {
         color: $color-name;
         border: solid 2px $hospital-green;
@@ -95,6 +99,7 @@
   }
   #mobile {
     padding: 7px 10px 7px 10px;
+    margin: 5px;
 
     &:hover {
       background-color: $hospital-green;
@@ -102,18 +107,21 @@
   }
   #email {
     padding: 7px;
+    margin: 5px;
     &:hover {
       background-color: $hospital-green;
     }
   }
   #linkedin {
     padding: 8px;
+    margin: 5px;
     &:hover {
       background-color: $hospital-green;
     }
   }
   #github {
     padding: 8px 7.5px 6px 7.5px;
+    margin: 5px;
     &:hover {
       background-color: $hospital-green;
     }
