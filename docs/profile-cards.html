@@ -67,12 +67,21 @@
         </div>
       </section>
 
-      <form action="">
+      <form class="profilecards__app" action="#" method="POST">
         <section class="profilecards__section--design">
-          <fieldset class="design__form" action="#" method="POST">
-            <span class="design__form--tittle">diseña</span>
+
+        <div class="form__header">
+            <div class="header--text">
+                <i class="far fa-object-ungroup icon-start"></i>
+                <h2 class="header--title">Diseña</h2>
+            </div>
+            <i class="fas fa-chevron-up icon-end"></i>
+        </div>
+
+          <fieldset class="design__form">
+            <!-- <span class="design__form--tittle">diseña</span>
             <i class="far fa-object-ungroup design"></i>
-            <i class="fas fa-chevron-up"></i>
+            <i class="fas fa-chevron-up"></i> -->
             <h3 class="design__form--colors">colores:</h3>
             <div class="design__form--ranges">
               <label class="label-1" for="range-1">
@@ -100,13 +109,21 @@
         </section>
 
         <section class="section__fill">
-            <div class="fill__header">
+            <div class="form__header">
+                <div class="header--text">
+                    <i class="far fa-keyboard icon-start"></i>
+                    <h2 class="header--title">Rellena</h2>
+                </div>
+                <i class="fas fa-chevron-up icon-end"></i>
+            </div>
+
+            <!-- <div class="fill__header">
                 <div class="fill__header--text">
                     <i class="far fa-keyboard fill__header--icon"></i>
                     <h2 class="fill__header--title">Rellena</h2>
                 </div>
                 <i class="fas fa-chevron-up fill__header--button"></i>
-            </div>
+            </div> -->
             <fieldset class="fill__form">
                 <label class="form__label" for="fullName">Nombre completo</label>
                 <input class="form__input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
@@ -128,10 +145,18 @@
             </fieldset>
         </section>
 
+        <div class="form__header">
+    <div class="header--text">
+        <i class="fas fa-share-alt icon-start"></i>
+        <h2 class="header--title">Comparte</h2>
+    </div>
+    <i class="fas fa-chevron-up icon-end"></i>
+</div>
+
         <fieldset class="profilecards__section--share">
-          <i class="fas fa-share-alt share"></i>
+          <!-- <i class="fas fa-share-alt share"></i>
           <span class="share__title">Comparte</span>
-          <i class="fas fa-chevron-up"></i>
+          <i class="fas fa-chevron-up"></i> -->
           <button class="share__button">
             <a href="./profile-cards.html" class="section__container--main-link"
               ><i class="far fa-address-card"></i>Crear tarjeta
