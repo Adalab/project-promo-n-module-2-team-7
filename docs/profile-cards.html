@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Profile cards</title>
+  </head>
+  <body>
+    <header class="header__cards">
+      <a href="./index.html">
+        <img
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="Logo awesome"
+          title="Logo"
+          class="header__cards--logo"
+        />
+      </a>
+    </header>
+
+    <!-- here goes the hero -->
+    <main class="cards">
+      <section class="hero">
+        <button class="hero__button" type="reset">
+          <i class="far fa-trash-alt"></i>Reset
+        </button>
+        <div class="hero__section">
+          <article class="hero__section--article">
+            <div class="hero__section--article--rectangle"></div>
+            <h2 class="hero__section--article--name">Nombre apellido</h2>
+            <p class="hero__section--article--text">Front-end developer</p>
+          </article>
+          <a href="https://store.taylorswift.com/products/red-taylors-version-cd"
+            ><img
+              src="./assets/images/red.jpg"
+              alt="taylorswift"
+              title="taylor red lips"
+              class="hero__section--img"
+          /></a>
+          <nav class="hero__section--media">
+            <a href=""><i class="fas fa-mobile-alt" id="mobile"></i></a>
+            <a href=""><i class="far fa-envelope" id="email"></i></a>
+            <a href=""><i class="fab fa-linkedin-in" id="linkedin"></i></a>
+            <a href=""><i class="fab fa-github-alt" id="github"></i></a>
+          </nav>
+        </div>
+      </section>
+
+      <form action="">
+        <section class="profilecards__section--design">
+          <fieldset class="design__form" action="#" method="POST">
+            <span class="design__form--tittle">diseña</span>
+            <i class="far fa-object-ungroup design"></i>
+            <i class="fas fa-chevron-up"></i>
+            <h3 class="design__form--colors">colores:</h3>
+            <div class="design__form--ranges">
+              <label class="label-1" for="range-1">
+                <input id="range-1" type="radio" value="range-1" name="range" />
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+                <div class="box-3"></div>
+              </label>
+
+              <label class="label-2" for="range-2">
+                <input id="range-2" type="radio" value="range-2" name="range" />
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+                <div class="box-3"></div>
+              </label>
+
+              <label class="label-3" for="range-3">
+                <input id="range-3" type="radio" value="range-3" name="range" />
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+                <div class="box-3"></div>
+              </label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="section__fill">
+            <div class="fill__header">
+                <div class="fill__header--text">
+                    <i class="far fa-keyboard fill__header--icon"></i>
+                    <h2 class="fill__header--title">Rellena</h2>
+                </div>
+                <i class="fas fa-chevron-up fill__header--button"></i>
+            </div>
+            <fieldset class="fill__form">
+                <label class="form__label" for="fullName">Nombre completo</label>
+                <input class="form__input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
+                <label class="form__label" for="jobPosition">Puesto</label>
+                <input class="form__input" placeholder="Ej: Front-end unicorn" id="jobPosition" type="text" name="jobPosition">
+                <label class="form__label" for="">Imagen de perfil</label>
+                <div class="form__choose--image">
+                    <button class="choose__image--button" form="fill__form" name=add-image>Añadir imagen</button>
+                    <div class="choose__image--preview"></div>
+                </div>
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" placeholder="Ej: sally.hill@gmail.com" id="email" type="email" name="email">
+                <label class="form__label" for="phone">Teléfono</label>
+                <input class="form__input" placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
+                <label class="form__label" for="linkedin">Linkedin</label>
+                <input class="form__input" placeholder="Ej: linkedin.com/sally-hill" id="linkedin" type="text" name="linkedin">
+                <label class="form__label" for="github">Github</label>
+                <input class="form__input" placeholder="Ej: @sally-hill" id="github" type="text" name="github">
+            </fieldset>
+        </section>
+
+        <fieldset class="profilecards__section--share">
+          <i class="fas fa-share-alt share"></i>
+          <span class="share__title">Comparte</span>
+          <i class="fas fa-chevron-up"></i>
+          <button class="share__button">
+            <a href="./profile-cards.html" class="section__container--main-link"
+              ><i class="far fa-address-card"></i>Crear tarjeta
+            </a>
+          </button>
+        </fieldset>
+
+      </form>
+    </main>
+
+    <footer class="footer__container">
+      <small class="footer__container--small"
+        >Awesome profile-cards &copy; 2021</small
+      >
+      <a href="https://adalab.es/">
+        <img
+          src="./assets/images/logo-adalab.png"
+          alt="Adalab logo"
+          title="Adalab logo"
+          class="footer__container--img"
+        />
+      </a>
+    </footer>
+
+
+    <script></script>
+  </body>
+</html>
