@@ -1,7 +1,10 @@
 .page{
     height: 60%;
     @media all and (min-width: 768px){
-        height: 70%;
+        height: 45%;
+    }
+    @media all and (min-width: 768px) {
+        height: 50%;
     }
 }
 
@@ -13,7 +16,7 @@
     justify-content: center;
     align-items: center;
     @media all and (min-width: 768px) {
-        justify-content: flex-end;
+        justify-content: center;
     }
     &--title{
         font-family: $font-merri;
