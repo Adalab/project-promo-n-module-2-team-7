@@ -16,11 +16,9 @@
     border-radius: 6px;
     align-self: center;
     justify-self: center;
-    width: 368px;
     box-sizing: border-box;
   }
   @media all and (min-width: 1024px) {
-    width: 585px;
   }
   &__button {
     font-family: $font-open;

@@ -9,10 +9,11 @@
   @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 60% 20%;
-    padding-top: 23px;
-    padding-bottom: 20px;
+    grid-template-rows: 22% 60% 18%;
+    // padding-top: 23px;
+    // padding-bottom: 20px;
     box-sizing: border-box;
+    padding: 20px 40px 20px 0;
   }
 
   @media all and (min-width: 1024px) {
