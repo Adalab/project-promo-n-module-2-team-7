@@ -1,21 +1,35 @@
 .header__container{
-    height: 20%;
-    background-color: $color-main;
+    height: 25%;
+   background-color: $color-main;
+   //background-color: pink;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    @media all and (min-width: 768px){
+        height: 45%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    @media all and (min-width:1024px) {
+        height: 40%;
+        padding-bottom: 10px;;
+        
+    }
     &--logo {
         width: 250px;
         height: 63px;
-        margin: 80px 35px 35px 35px; 
+        //margin: 80px 35px 35px 35px; 
         @media all and (min-width: 768px) {
             width: 419px;
             height: 105px;
-            margin: 300px 174px 31px 174px; 
+           // margin: 300px 174px 31px 174px; 
         }
         @media all and (min-width:1024px) {
             width: 419px;
             height: 105px;
-            margin: 100px auto 31px auto; 
         }
     }
 }
