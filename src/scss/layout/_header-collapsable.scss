@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: 1fr;
-  //   margin-bottom: 5px;
   font-family: $font-open;
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
   color: $color-texts;
-  //   margin: 0 20px 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 7px;
   .header--text {
     grid-column: 1 / 2;
     display: flex;
