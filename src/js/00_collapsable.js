@@ -1,5 +1,4 @@
 'use strict';
-/* eslint-disable no-console */
 // elementos de HTML
 const fieldset = document.querySelector('.js_fieldset'); //clase en design.html
 const collapsable = document.querySelector('.js_collapsable'); //clase en header-collapsable.html

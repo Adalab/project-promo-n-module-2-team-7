@@ -1,30 +1,73 @@
 <section class="section__fill">
-    <include src="./header-collapsable.html" title="Rellena" iconStart="far fa-keyboard" iconEnd="fas fa-chevron-up"></include>
+  <include
+    src="./header-collapsable.html"
+    title="Rellena"
+    iconStart="far fa-keyboard"
+    iconEnd="fas fa-chevron-up"
+  ></include>
 
-    <!-- <div class="fill__header">
+  <!-- <div class="fill__header">
         <div class="fill__header--text">
             <i class="far fa-keyboard fill__header--icon"></i>
             <h2 class="fill__header--title">Rellena</h2>
         </div>
         <i class="fas fa-chevron-up fill__header--button"></i>
     </div> -->
-    <fieldset class="fill__form">
-        <label class="form__label" for="fullName">Nombre completo</label>
-        <input class="form__input" placeholder="Ej: Sally Jill" id="fullName" type="text" name="fullName">
-        <label class="form__label" for="jobPosition">Puesto</label>
-        <input class="form__input" placeholder="Ej: Front-end unicorn" id="jobPosition" type="text" name="jobPosition">
-        <label class="form__label" for="">Imagen de perfil</label>
-        <div class="form__choose--image">
-            <button class="choose__image--button" form="fill__form" name=add-image>Añadir imagen</button>
-            <div class="choose__image--preview"></div>
-        </div>
-        <label class="form__label" for="email">Email</label>
-        <input class="form__input" placeholder="Ej: sally.hill@gmail.com" id="email" type="email" name="email">
-        <label class="form__label" for="phone">Teléfono</label>
-        <input class="form__input" placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
-        <label class="form__label" for="linkedin">Linkedin</label>
-        <input class="form__input" placeholder="Ej: linkedin.com/sally-hill" id="linkedin" type="text" name="linkedin">
-        <label class="form__label" for="github">Github</label>
-        <input class="form__input" placeholder="Ej: @sally-hill" id="github" type="text" name="github">
-    </fieldset>
+  <fieldset class="fill__form">
+    <label class="form__label" for="fullName">Nombre completo</label>
+    <input
+      class="form__input js_name"
+      placeholder="Ej: Sally Jill"
+      id="fullName"
+      type="text"
+      name="fullName"
+    />
+    <label class="form__label" for="jobPosition">Puesto</label>
+    <input
+      class="form__input"
+      placeholder="Ej: Front-end unicorn"
+      id="jobPosition"
+      type="text"
+      name="jobPosition"
+    />
+    <label class="form__label" for="">Imagen de perfil</label>
+    <div class="form__choose--image">
+      <button class="choose__image--button" form="fill__form" name="add-image">
+        Añadir imagen
+      </button>
+      <div class="choose__image--preview"></div>
+    </div>
+    <label class="form__label" for="email">Email</label>
+    <input
+      class="form__input"
+      placeholder="Ej: sally.hill@gmail.com"
+      id="email"
+      type="email"
+      name="email"
+    />
+    <label class="form__label" for="phone">Teléfono</label>
+    <input
+      class="form__input"
+      placeholder="Ej: 555-55-55-55"
+      id="phone"
+      type="tel"
+      name="phone"
+    />
+    <label class="form__label" for="linkedin">Linkedin</label>
+    <input
+      class="form__input"
+      placeholder="Ej: linkedin.com/sally-hill"
+      id="linkedin"
+      type="text"
+      name="linkedin"
+    />
+    <label class="form__label" for="github">Github</label>
+    <input
+      class="form__input"
+      placeholder="Ej: @sally-hill"
+      id="github"
+      type="text"
+      name="github"
+    />
+  </fieldset>
 </section>
