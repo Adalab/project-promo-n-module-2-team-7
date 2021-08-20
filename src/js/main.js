@@ -1,3 +1,3 @@
+/* eslint-disable no-console */
 'use strict';
-
-console.log('hola mundo');
+console.log('Hola Mundo');

@@ -1,1 +1,1 @@
-"use strict";console.log("hola mundo");
+"use strict";const fieldset=document.querySelector(".js_fieldset"),collapsable=document.querySelector(".js_collapsable");function handleClick(){fieldset.classList.toggle("hidden"),collapsable.classList.toggle("icon-end--rotate")}console.log("Hola Mundo"),collapsable.addEventListener("click",handleClick),console.log("Hola Mundo");
