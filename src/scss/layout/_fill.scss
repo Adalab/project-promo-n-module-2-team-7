@@ -18,6 +18,8 @@
       border: $hospital-green solid 1px;
       padding-left: 10px;
       height: 30px;
+    }
+    ::placeholder {
       color: $color-placeholder;
     }
     .choose__image--button {
