@@ -21,6 +21,7 @@ function handleClick(ev) {
     }
     else {
       fieldset[index].classList.add('hidden');
+      collapsable[index].classList.toggle('icon-end--rotate');
     }
   }
   // for (const item of fieldset) {
