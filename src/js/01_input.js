@@ -1,15 +1,15 @@
 'use strict';
 
 //elementos HTML
-const nameElement = document.querySelector('.js_name'); //clase en fill.html en input
-const namePreviewElement = document.querySelector('.js_preview-name'); //clase en hero.html en h2
+// const nameElement = document.querySelector('.js_name'); //clase en fill.html en input
+// const namePreviewElement = document.querySelector('.js_preview-name'); //clase en hero.html en h2
 
 // const jobPreview = document.querySelector('.js_preview-job');
 
 const cardElements = document.querySelectorAll('.js_preview');
 
 console.log(cardElements);
-console.log(nameElement.value);
+// console.log(nameElement.value);
 
 let data = {
   palette: '',
