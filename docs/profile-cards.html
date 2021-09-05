@@ -53,13 +53,14 @@
             </h2>
             <p class="hero__section--article--text">Front-end developer</p>
           </article>
-          <a href="https://store.taylorswift.com/products/red-taylors-version-cd"
-            ><img
+         
+          <div class="hero__section--img js__profile-image" style="background-image:url(./assets/images/red.jpg)">
+            <!-- <img
               src="./assets/images/red.jpg"
               alt="taylorswift"
-              title="taylor red lips"
-              class="hero__section--img"
-          /></a>
+              title="taylor red lips"/> -->
+          </div>
+          
           <nav class="hero__section--media">
             <a href=""><i class="fas fa-mobile-alt" id="mobile"></i></a>
             <a href=""><i class="far fa-envelope" id="email"></i></a>
@@ -71,16 +72,16 @@
 
       <form class="profilecards__app" action="#" method="POST">
         <section class="profilecards__section--design">
-          <div class="form__header">
+          <div class="form__header ">
             <div class="header--text">
               <i class="far fa-object-ungroup icon-start"></i>
               <h2 class="header--title">Diseña</h2>
             </div>
-            <i class="fas fa-chevron-up icon-end js_collapsable"></i>
+            <i class="fas fa-chevron-up icon-end js_collapsable  "></i>
           </div>
 
 
-          <fieldset class="design__form js_fieldset">
+          <fieldset class="design__form js_fieldset hidden">
             <!-- <span class="design__form--tittle">diseña</span>
             <i class="far fa-object-ungroup design"></i>
             <i class="fas fa-chevron-up"></i> -->
@@ -111,12 +112,12 @@
         </section>
 
         <section class="section__fill">
-          <div class="form__header">
+          <div class="form__header ">
             <div class="header--text">
               <i class="far fa-keyboard icon-start"></i>
               <h2 class="header--title">Rellena</h2>
             </div>
-            <i class="fas fa-chevron-up icon-end js_collapsable"></i>
+            <i class="fas fa-chevron-up icon-end js_collapsable  "></i>
           </div>
 
 
@@ -127,7 +128,7 @@
                 </div>
                 <i class="fas fa-chevron-up fill__header--button"></i>
             </div> -->
-          <fieldset class="fill__form">
+          <fieldset class="fill__form js_fieldset hidden">
             <label class="form__label" for="fullName">Nombre completo</label>
             <input
               class="form__input js_name"
@@ -146,10 +147,11 @@
             />
             <label class="form__label" for="">Imagen de perfil</label>
             <div class="form__choose--image">
-              <button class="choose__image--button" form="fill__form" name="add-image">
+              <label class="choose__image--button" form="fill__form" name="add-image" for="img-selector">
                 Añadir imagen
-              </button>
-              <div class="choose__image--preview"></div>
+              </label>
+              <input type="file" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+              <div class="choose__image--preview js__profile-preview"></div>
             </div>
             <label class="form__label" for="email">Email</label>
             <input
@@ -186,20 +188,20 @@
           </fieldset>
         </section>
 
-        <div class="form__header">
+        <div class="form__header ">
   <div class="header--text">
     <i class="fas fa-share-alt icon-start"></i>
     <h2 class="header--title">Comparte</h2>
   </div>
-  <i class="fas fa-chevron-up icon-end js_collapsable"></i>
+  <i class="fas fa-chevron-up icon-end js_collapsable  "></i>
 </div>
 
 
-        <fieldset class="profilecards__section--share">
+        <fieldset class="profilecards__section--share js_fieldset hidden">
           <!-- <i class="fas fa-share-alt share"></i>
           <span class="share__title">Comparte</span>
           <i class="fas fa-chevron-up"></i> -->
-          <button class="share__button">
+          <button class="share__button ">
             <a href="./profile-cards.html" class="section__container--main-link"
               ><i class="far fa-address-card"></i>Crear tarjeta
             </a>
@@ -228,8 +230,11 @@
     </footer>
 
 
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+  
     <script type="text/javascript" src="./assets/js/00_collapsable.js"></script>
     <script type="text/javascript" src="./assets/js/01_input.js"></script>
+    <script type="text/javascript" src="./assets/js/02_image.js"></script>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
