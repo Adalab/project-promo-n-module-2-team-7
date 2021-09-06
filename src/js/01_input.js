@@ -24,13 +24,22 @@ const form = document.querySelector('.profilecards__app');
 
 function handleFillData(ev) {
  
-  const inputId = ev.target.id;
-  const inputValue = ev.target.value;
-  console.log(inputId, inputValue);
+  if(ev.target.name === 'palette'){
+    const inputName = ev.target.name;
+    const inputValue = ev.target.value;
+    console.log(inputName, inputValue);
+    data[inputName] = inputValue;
+  }
+  else{
+    const inputId = ev.target.id;
+    const inputValue = ev.target.value;
+    console.log(inputId, inputValue);
+  
+    data[inputId] = inputValue;
+    
+  }
 
-  data[inputId] = inputValue;
   console.log(data);
-
   fillCard(data);
 
 }
