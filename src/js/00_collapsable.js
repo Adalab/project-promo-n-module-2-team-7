@@ -8,7 +8,7 @@ console.log('Hola Mundo');
 
 function handleClick(ev) {
 
-  const clickedHeader = ev.currentTarget;
+  let clickedHeader = ev.currentTarget;
   // console.log(clickedHeader);
   const clicked = clickedHeader.parentNode;
   console.log(clicked);
