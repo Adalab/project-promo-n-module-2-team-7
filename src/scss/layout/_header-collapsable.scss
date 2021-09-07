@@ -24,5 +24,8 @@
     grid-column: 2 / 3;
     justify-self: end;
     color: $color-texts;
+    &--rotate {
+      transform: rotate(180deg);
+    }
   }
 }

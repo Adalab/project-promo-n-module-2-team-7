@@ -1,3 +1,3 @@
-'use strict';
-
-console.log('hola mundo');
+/* eslint-disable no-console */
+// 'use strict';
+// console.log('Hola Mundo');
