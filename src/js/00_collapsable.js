@@ -20,26 +20,9 @@ function handleClick(ev) {
     }
     else {
       fieldset[index].classList.add('hidden');
-      collapsable[index].classList.toggle('icon-end--rotate');
     }
   }
-  // for (const item of fieldset) {
-  //   console.log(item);
-  //   if(clicked === item){
-  //     item.classList.remove('hidden');
-  //   }
-  //   else   {
-  //     item.classList.add('hidden');
-  //   }
-  // }
-
-
-  // fieldset.classList.toggle('hidden'); // clase en design.scss
-  // collapsable.classList.toggle('icon-end--rotate'); //clase en header-collapsable.scss
 }
-
-//listener sobre elemento (icon-end)
-// collapsable.addEventListener('click', handleClick);
 
 for (const item of collapsable) {
   item.addEventListener('click', handleClick);
