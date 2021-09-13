@@ -115,8 +115,9 @@
         @media all and (min-width: 768px) {
             margin: 200px auto 59px auto;
         }
-        @media all and (min-width:768px) {
+        @media all and (min-width:1024px) {
             margin: 100px auto 59px auto;
+            padding: 5px;
         }
     }
 }
