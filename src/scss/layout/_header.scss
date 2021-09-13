@@ -25,11 +25,13 @@
         @media all and (min-width: 768px) {
             width: 419px;
             height: 105px;
+            padding-bottom: 80px;
            // margin: 300px 174px 31px 174px; 
         }
         @media all and (min-width:1024px) {
             width: 419px;
             height: 105px;
+            padding-bottom: 30px;
         }
     }
 }
