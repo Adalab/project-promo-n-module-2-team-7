@@ -18,8 +18,8 @@ console.log(cardElements);
 
 let data = {
   palette: '',
-  fullName: '',
-  jobPosition: '',
+  name: '',
+  job: '',
   email: '',
   phone: '',
   linkedin: '',
@@ -75,11 +75,11 @@ function handleFillData(ev) {
 
 function fillCard(data){
   console.log('estoy aqui');
-  if(data.fullName !== ''){
-    cardElements[0].innerHTML = data.fullName;
+  if(data.name !== ''){
+    cardElements[0].innerHTML = data.name;
   }
-  else if (data.jobPosition !== ''){
-    cardElements[1].innerHTML = data.jobPosition;
+  else if (data.job !== ''){
+    cardElements[1].innerHTML = data.job;
   }
   else if(data.phone !== ''){
     cardElements[2].innerHTML = data.phone;
