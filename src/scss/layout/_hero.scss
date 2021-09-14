@@ -142,8 +142,11 @@
 }
 
 .color3 {
-  color: $hospital-green;
+  border-color: $hospital-green;
 }
+// .icon:hover {
+//   background-color: $hospital-green;
+// }
 .color4 {
   color: $dried-blood;
 }
@@ -153,8 +156,11 @@
 }
 
 .color6 {
-  color: $tomato;
+  border-color: $tomato;
 }
+// .icon:hover {
+//   background-color: $tomato;
+// }
 
 .color7 {
   color: $slate;
@@ -163,5 +169,8 @@
   background-color: $faded-orange;
 }
 .color9 {
-  color: $light-grey-blue;
+  border-color: $light-grey-blue;
 }
+// .icon:hover {
+//   background-color: $light-grey-blue;
+// }

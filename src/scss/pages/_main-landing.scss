@@ -1,123 +1,125 @@
-.page{
-    height: 60%;
-    @media all and (min-width: 768px){
-        height: 45%;
-    }
-   // @media all and (min-width: 768px) {
-     //   height: 50%;
-    //}
+.page {
+  height: 60%;
+  @media all and (min-width: 768px) {
+    height: 45%;
+  }
+  // @media all and (min-width: 768px) {
+  //   height: 50%;
+  //}
 }
 
-.section__container{
-    height: 100%;
-    background-color: $color-main;
-    display: flex;
-    flex-direction: column;
+.section__container {
+  height: 100%;
+  background-color: $color-main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
     justify-content: center;
-    align-items: center;
+  }
+  &--title {
+    font-family: $font-merri;
+    color: $dull-orange;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
     @media all and (min-width: 768px) {
-        justify-content: center;
+      font-size: 24px;
     }
-    &--title{
-        font-family: $font-merri;
-        color: $dull-orange;
-        font-size: 20px; 
-        text-align: center;
-        margin-bottom: 5px;
-        @media all and (min-width: 768px) {
-            font-size: 24px;
-        }
+  }
+  &--paragraph {
+    font-family: $font-open;
+    font-size: 14px;
+    color: $dark-green-blue;
+    /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
+    text-align: center;
+    margin: 0 28px 25px 27px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin: 0 218px 50px 218px;
     }
-    &--paragraph{
-        font-family: $font-open;
-        font-size: 14px; 
-        color: $dark-green-blue;
-        /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
-        text-align: center;
-        margin: 0 28px 25px 27px;
-        @media all and (min-width: 768px) {
-            font-size: 16px;
-            margin: 0 218px 50px 218px;
-        }
-        @media all and (min-width: 768px) {
-            margin: 0 218px 20px 218px;
-        }
+    @media all and (min-width: 1024px) {
+      //aqui ponia min-width: 768px antes
+      margin: 0 218px 20px 218px;
     }
-    &--rectangle{
-        margin-left: auto;
-        margin-right: auto;
-        width: 268px; 
-        height: 74px;
-        border-top: 2px solid $orange-rectangle; 
-        border-bottom: 2px solid $orange-rectangle;
-        border-left: 2px solid $orange-rectangle;
-        border-right: 2px solid $orange-rectangle;
-        border-radius: 4px;  
-        display: grid;
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 1fr 1fr 1fr;
-        @media all and (min-width: 768px) {
-            width: 325px;
-            height: 86px;
-        }
+  }
+  &--rectangle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 268px;
+    height: 74px;
+    border-top: 2px solid $orange-rectangle;
+    border-bottom: 2px solid $orange-rectangle;
+    border-left: 2px solid $orange-rectangle;
+    border-right: 2px solid $orange-rectangle;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
     }
-    &--main--design{
-        margin: 15px auto 3px auto;
-        font-size: 23px; 
-        color: $dull-orange;
-        grid-row-start: 1;
-        grid-column-start: 1;
-        @media all and (min-width: 768px) {
-            font-size: 28px;
-        }
+  }
+  &--main--design {
+    margin: 15px auto 3px auto;
+    font-size: 23px;
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
     }
-    &--main--fill {
-        margin: 15px auto 3px auto;
-        font-size: 23px; 
-        color: $dull-orange;
-        grid-row-start: 1;
-        grid-column-start: 2;
-        @media all and (min-width: 768px) {
-            font-size: 28px;
-        }
+  }
+  &--main--fill {
+    margin: 15px auto 3px auto;
+    font-size: 23px;
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
     }
-    &--main--share{
-        margin: 15px auto 3px auto;
-        font-size: 23px; 
-        color: $dull-orange;
-        grid-row-start: 1;
-        grid-column-start: 3;
-        @media all and (min-width: 768px) {
-            font-size: 28px;
-        }
+  }
+  &--main--share {
+    margin: 15px auto 3px auto;
+    font-size: 23px;
+    color: $dull-orange;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
     }
-    &--title-icons {
-        margin: 5px auto auto auto;
-        color: $gunmetal;
-        font-family: $font-open;
-        font-size: 13px;
-        @media all and (min-width: 768px) {
-            font-size: 16px;
-        }
-    } 
-    &--button {
-        width: 129px;
-        height: 42px;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: $font-open;
-        font-weight: 600;
-        font-size: 16px;
-        background-color: $dirty-blue;
-        border-radius: 20px;
-        border: 1px solid $dirty-blue;
-        margin: 50px auto 0px auto;
-        @media all and (min-width: 768px) {
-            margin: 200px auto 59px auto;
-        }
-        @media all and (min-width:1024px) {
-            margin: 100px auto 59px auto;
-            padding: 5px;
-        }
+  }
+  &--title-icons {
+    margin: 5px auto auto auto;
+    color: $gunmetal;
+    font-family: $font-open;
+    font-size: 13px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
     }
+  }
+  &--button {
+    width: 129px;
+    height: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $font-open;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: $dirty-blue;
+    border-radius: 20px;
+    border: 1px solid $dirty-blue;
+    margin: 50px auto 0px auto;
+    @media all and (min-width: 768px) {
+      margin: 200px auto 59px auto;
+      padding: 5px; //he añadido padding: 5px TAMBIEN cuando min-width: 768px
+    }
+    @media all and (min-width: 1024px) {
+      margin: 100px auto 59px auto;
+      padding: 5px;
+    }
+  }
 }

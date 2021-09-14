@@ -114,10 +114,16 @@ function applyColor(data){
     //icons son los iconos
     for (const icon of cardIcons) {
       console.log('entra al for');
+      //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
       icon.classList.remove('color7');
       icon.classList.add('color1');
+      //color del borde del icono
+      icon.classList.remove('color3');
+      icon.classList.remove('color6');
+      icon.classList.remove('color9');
+      icon.classList.add('color3');
     }
 
   }
@@ -134,10 +140,16 @@ function applyColor(data){
     //icons son los iconos
     for (const icon of cardIcons) {
       console.log('entra al for');
+      //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
       icon.classList.remove('color7');
       icon.classList.add('color4');
+      //color del borde del icono
+      icon.classList.remove('color3');
+      icon.classList.remove('color6');
+      icon.classList.remove('color9');
+      icon.classList.add('color6');
     }
   }
   else if(data.palette === '3'){
@@ -153,10 +165,16 @@ function applyColor(data){
     //icons son los iconos
     for (const icon of cardIcons) {
       console.log('entra al for');
+      //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
       icon.classList.remove('color7');
       icon.classList.add('color7');
+      //color del borde del icono
+      icon.classList.remove('color3');
+      icon.classList.remove('color6');
+      icon.classList.remove('color9');
+      icon.classList.add('color9');
     }
   }
 }
