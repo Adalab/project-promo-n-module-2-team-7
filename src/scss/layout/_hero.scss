@@ -100,30 +100,30 @@
     padding: 7px 10px 7px 10px;
     margin: 5px;
 
-    &:hover {
-      background-color: $hospital-green;
-    }
+    // &:hover {
+    //   background-color: $hospital-green;
+    // }
   }
   #email {
     padding: 7px;
     margin: 5px;
-    &:hover {
-      background-color: $hospital-green;
-    }
+    // &:hover {
+    //   background-color: $hospital-green;
+    // }
   }
   #linkedin {
     padding: 8px;
     margin: 5px;
-    &:hover {
-      background-color: $hospital-green;
-    }
+    // &:hover {
+    //   background-color: $hospital-green;
+    // }
   }
   #github {
     padding: 8px 7.5px 6px 7.5px;
     margin: 5px;
-    &:hover {
-      background-color: $hospital-green;
-    }
+    // &:hover {
+    //   background-color: $hospital-green;
+    // }
   }
 }
 
@@ -144,9 +144,9 @@
 .color3 {
   border-color: $hospital-green;
 }
-// .icon:hover {
-//   background-color: $hospital-green;
-// }
+.color3:hover {
+  background-color: $hospital-green;
+}
 .color4 {
   color: $dried-blood;
 }
@@ -158,9 +158,9 @@
 .color6 {
   border-color: $tomato;
 }
-// .icon:hover {
-//   background-color: $tomato;
-// }
+.color6:hover {
+  background-color: $tomato;
+}
 
 .color7 {
   color: $slate;
@@ -171,6 +171,6 @@
 .color9 {
   border-color: $light-grey-blue;
 }
-// .icon:hover {
-//   background-color: $light-grey-blue;
-// }
+.color9:hover {
+  background-color: $light-grey-blue;
+}
