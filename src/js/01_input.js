@@ -114,7 +114,6 @@ function applyColor(data) {
     cardRectangle.classList.add('color8');
     //icons son los iconos
     for (const icon of cardIcons) {
-      console.log('entra al for');
       //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
