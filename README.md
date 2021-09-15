@@ -42,7 +42,7 @@ Echas de menos algo en nuestro Proyecto? Cuéntanos :) !
 
 ## Equipo
 
-![Daniela Darnea](https://github.com/mdanieladla),
-![Andrea Aguado](https://github.com/AndreaAguado),
-![Claudia Stein](https://github.com/ClaudiaBStein),
-![Patricia Martínez](https://github.com/patricuismart)
+[Daniela Darnea](https://github.com/mdanieladla),
+[Andrea Aguado](https://github.com/AndreaAguado),
+[Claudia Stein](https://github.com/ClaudiaBStein),
+[Patricia Martínez](https://github.com/patricuismart)
