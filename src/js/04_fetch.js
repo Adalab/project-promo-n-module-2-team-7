@@ -30,7 +30,7 @@ function handleShareButton(ev){
     },
   })
     .then((response) => response.json())
-    .then((data)=>{
+    .then((data) => {
       console.log(data);
       //   cardElement.innerHTML = data.cardURL;
       generatedLink.innerHTML =  data.cardURL;
