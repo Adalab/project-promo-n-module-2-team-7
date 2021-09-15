@@ -26,27 +26,6 @@ let data = {
   github: '',
 };
 
-// let paletteColors = [
-
-//   {color1: '',
-//    color2: '',
-//   color3: ''
-//   },
-
-//   {color4: '',
-//   color5: '',
-//   color6: ''
-//   },
-
-//   {color7: '',
-//   color8: '',
-//   color9: ''
-//   }
-// ];
-
-// for (const item of paletteColors) {
-
-// }
 const form = document.querySelector('.profilecards__app');
 
 function handleFillData(ev) {
@@ -69,7 +48,6 @@ function handleFillData(ev) {
 }
 
 function fillCard(data) {
-  console.log('estoy aqui');
   if (data.job !== '') {
     cardElements[1].innerHTML = data.job;
   } else if (data.name !== '') {
@@ -90,8 +68,6 @@ function fillCard(data) {
 }
 
 function applyColor(data) {
-  console.log('estoy en los colores');
-
   if (data.palette === '1') {
     //cardName es el nombre
     cardName.classList.remove('color1');
@@ -105,7 +81,6 @@ function applyColor(data) {
     cardRectangle.classList.add('color2');
     //icons son los iconos
     for (const icon of cardIcons) {
-      console.log('entra al for');
       //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
@@ -129,7 +104,6 @@ function applyColor(data) {
     cardRectangle.classList.add('color5');
     //icons son los iconos
     for (const icon of cardIcons) {
-      console.log('entra al for');
       //color del icono
       icon.classList.remove('color1');
       icon.classList.remove('color4');
