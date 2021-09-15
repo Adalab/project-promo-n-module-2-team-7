@@ -92,7 +92,7 @@ function fillCard(data){
   }
   else if(data.github !== ''){
     let href= 'https://github.com/' + data.github ;
-    cardElements[5].setAttribute('.href', href );
+    cardElements[5].setAttribute('href', href );
   }
 
 }
