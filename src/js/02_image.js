@@ -5,7 +5,6 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
-
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -14,12 +13,11 @@ const profilePreview = document.querySelector('.js__profile-preview');
  * al tener los datos listos
  * @param {evento} e
  */
-function getImage(e){
+function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
-
 
 /**
  * Una vez tenemos los datos listos en el FR podemos
@@ -35,17 +33,6 @@ function writeImage() {
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   data.photo = fr.result;
 }
-
-
-/**
- * Genera un click automático en nuesto campo de tipo "file"
- * que está oculto
- */
-
-
-// function fakeFileClick() {
-//  fileField.click();
-// }
 
 /**
  * Añadimos los listeners necesarios:
