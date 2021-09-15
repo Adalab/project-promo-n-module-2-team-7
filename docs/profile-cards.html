@@ -39,33 +39,51 @@
       </a>
     </header>
 
-    <!-- here goes the hero -->
     <main class="cards">
       <section class="hero">
         <button class="hero__button js-resetButton" type="reset">
           <i class="far fa-trash-alt"></i>Reset
         </button>
-        <div class="hero__section">
+        <div class="hero__section js_hero__section">
           <article class="hero__section--article">
             <div class="hero__section--article--rectangle js-rectangle"></div>
             <h2 class="hero__section--article--name js_preview js-name">
               Nombre apellido
             </h2>
-            <p class="hero__section--article--text js_preview">Front-end developer</p>
+            <p class="hero__section--article--text js_preview js_preview-job">
+              Front-end developer
+            </p>
           </article>
-         
-          <div class="hero__section--img js__profile-image" style="background-image:url(./assets/images/red.jpg)">
-            <!-- <img
-              src="./assets/images/red.jpg"
-              alt="taylorswift"
-              title="taylor red lips"/> -->
-          </div>
-          
+
+          <div
+            class="hero__section--img js__profile-image"
+            style="background-image: url(./assets/images/stars.gif)"
+          ></div>
           <nav class="hero__section--media">
-            <a href=""><i class="fas fa-mobile-alt js_preview js-icon" id="mobile"></i></a>
-            <a href=""><i class="far fa-envelope js_preview js-icon" id="email"></i></a>
-            <a href=""><i class="fab fa-linkedin-in js_preview js-icon" id="linkedin"></i></a>
-            <a href="" target="_blank"><i class="fab fa-github-alt js_preview js-icon" id="github"></i></a>
+            <a href="" class="js_preview"
+              ><i
+                class="fas fa-mobile-alt js-icon icon color3 js_input_mobile"
+                id="mobile"
+              ></i
+            ></a>
+            <a href="" class="js_preview"
+              ><i
+                class="far fa-envelope js-icon icon color3 js_input_email"
+                id="email"
+              ></i
+            ></a>
+            <a href="" class="js_preview"
+              ><i
+                class="fab fa-linkedin-in js-icon icon color3 js_input_linkedin"
+                id="linkedin"
+              ></i
+            ></a>
+            <a href="" target="_blank" class="js_preview"
+              ><i
+                class="fab fa-github-alt js-icon icon color3 js_input_github"
+                id="github"
+              ></i
+            ></a>
           </nav>
         </div>
       </section>
@@ -82,27 +100,24 @@
 
 
           <fieldset class="design__form js_fieldset hidden">
-            <!-- <span class="design__form--tittle">diseña</span>
-            <i class="far fa-object-ungroup design"></i>
-            <i class="fas fa-chevron-up"></i> -->
             <h3 class="design__form--colors">colores:</h3>
             <div class="design__form--ranges">
               <label class="label-1" for="1">
-                <input checked class="range" id="1" type="radio" value="1" name="palette" />
+                <input checked class="range js_palette" id="1" type="radio" value="1" name="palette" />
                 <div class="box-1"></div>
                 <div class="box-2"></div>
                 <div class="box-3"></div>
               </label>
 
               <label class="label-2" for="2">
-                <input class="range" id="2" type="radio" value="2" name="palette" />
+                <input class="range js_palette" id="2" type="radio" value="2" name="palette" />
                 <div class="box-1"></div>
                 <div class="box-2"></div>
                 <div class="box-3"></div>
               </label>
 
               <label class="label-3" for="3">
-                <input class="range" id="3" type="radio" value="3" name="palette" />
+                <input class="range js_palette" id="3" type="radio" value="3" name="palette" />
                 <div class="box-1"></div>
                 <div class="box-2"></div>
                 <div class="box-3"></div>
@@ -120,42 +135,44 @@
             <i class="fas fa-chevron-up icon-end js_collapsable"></i>
           </div>
 
-
-          <!-- <div class="fill__header">
-                <div class="fill__header--text">
-                    <i class="far fa-keyboard fill__header--icon"></i>
-                    <h2 class="fill__header--title">Rellena</h2>
-                </div>
-                <i class="fas fa-chevron-up fill__header--button"></i>
-            </div> -->
           <fieldset class="fill__form js_fieldset hidden">
-            <label class="form__label" for="fullName">Nombre completo</label>
+            <label class="form__label" for="name">Nombre completo</label>
             <input
               class="form__input js_name"
               placeholder="Ej: Sally Jill"
-              id="fullName"
+              id="name"
               type="text"
-              name="fullName"
+              name="name"
             />
-            <label class="form__label" for="jobPosition">Puesto</label>
+            <label class="form__label" for="job">Puesto</label>
             <input
-              class="form__input"
+              class="form__input js_input_job"
               placeholder="Ej: Front-end unicorn"
-              id="jobPosition"
+              id="job"
               type="text"
-              name="jobPosition"
+              name="job"
             />
             <label class="form__label" for="">Imagen de perfil</label>
             <div class="form__choose--image">
-              <label class="choose__image--button" form="fill__form" name="add-image" for="img-selector">
+              <label
+                class="choose__image--button"
+                form="fill__form"
+                name="photo"
+                for="photo"
+              >
                 Añadir imagen
               </label>
-              <input type="file" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+              <input
+                name="photo"
+                type="file"
+                id="photo"
+                class="action__hiddenField js__profile-upload-btn"
+              />
               <div class="choose__image--preview js__profile-preview"></div>
             </div>
             <label class="form__label" for="email">Email</label>
             <input
-              class="form__input"
+              class="form__input js_input_email"
               placeholder="Ej: sally.hill@gmail.com"
               id="email"
               type="email"
@@ -163,7 +180,7 @@
             />
             <label class="form__label" for="phone">Teléfono</label>
             <input
-              class="form__input"
+              class="form__input js_input_mobile"
               placeholder="Ej: 555-55-55-55"
               id="phone"
               type="tel"
@@ -171,7 +188,7 @@
             />
             <label class="form__label" for="linkedin">Linkedin</label>
             <input
-              class="form__input"
+              class="form__input js_input_linkedin"
               placeholder="Ej: linkedin.com/sally-hill"
               id="linkedin"
               type="text"
@@ -179,7 +196,7 @@
             />
             <label class="form__label" for="github">Github</label>
             <input
-              class="form__input"
+              class="form__input js_input_github"
               placeholder="Ej: @sally-hill"
               id="github"
               type="text"
@@ -197,15 +214,26 @@
 </div>
 
 
-        <fieldset class="profilecards__section--share js_fieldset hidden">
-          <!-- <i class="fas fa-share-alt share"></i>
-          <span class="share__title">Comparte</span>
-          <i class="fas fa-chevron-up"></i> -->
-          <button class="share__button ">
+        <fieldset class="profilecards__section--share js_fieldset">
+          <button class="share__button js_share__button">
             <a href="./profile-cards.html" class="section__container--main-link"
               ><i class="far fa-address-card"></i>Crear tarjeta
             </a>
           </button>
+          <div class="container-creadted-card js_created-card hidden">
+            <p class="paragraph-created-card js_share-message">
+              La tarjeta ha sido creada
+            </p>
+            <a
+              class="link-created-card js_link_created"
+              target="_blank"
+              href="www.twwitter.com"
+              >www.twwitter.com/loquesea/lpomnn/lllammnuiv</a
+            >
+            <button class="button-twitter">
+              <i class="fab fa-twitter twitter"></i>Compartir en twitter
+            </button>
+          </div>
         </fieldset>
 
       </form>
@@ -229,13 +257,10 @@
       </a>
     </footer>
 
-
-  
     <script type="text/javascript" src="./assets/js/00_collapsable.js"></script>
     <script type="text/javascript" src="./assets/js/01_input.js"></script>
     <script type="text/javascript" src="./assets/js/02_image.js"></script>
     <script type="text/javascript" src="./assets/js/03_reset.js"></script>
-
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
