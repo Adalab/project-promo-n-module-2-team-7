@@ -75,14 +75,17 @@ function fillCard(data) {
   } else if (data.name !== '') {
     cardElements[0].innerHTML = data.name;
   } else if (data.phone !== '') {
-    cardElements[2].innerHTML = data.phone;
+    cardElements[3].innerHTML = data.phone;
   } else if (data.email !== '') {
-    cardElements[3].innerHTML = data.email;
+    cardElements[4].innerHTML = data.email;
   } else if (data.linkedin !== '') {
-    cardElements[4].innerHTML = data.linkedin;
+    cardElements[5].innerHTML = data.linkedin;
   } else if (data.github !== '') {
     let href = 'https://github.com/' + data.github;
-    cardElements[5].setAttribute('href', href);
+    cardElements[6].setAttribute('href', href);
+  } else if (data.photo !== '') {
+    cardElements[2].setAttribute =
+      ('style', `background-image: url(${data.photo})`);
   }
 }
 
