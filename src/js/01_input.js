@@ -4,7 +4,7 @@
 // const nameElement = document.querySelector('.js_name'); //clase en fill.html en input
 // const namePreviewElement = document.querySelector('.js_preview-name'); //clase en hero.html en h2
 
-// const jobPreview = document.querySelector('.js_preview-job');
+const jobPreview = document.querySelector('.js_preview-job');
 
 const cardElements = document.querySelectorAll('.js_preview');
 
@@ -23,9 +23,8 @@ let data = {
   email: '',
   phone: '',
   linkedin: '',
-  github: ''
+  github: '',
 };
-
 
 // let paletteColors = [
 
@@ -45,27 +44,23 @@ let data = {
 //   }
 // ];
 
-
 // for (const item of paletteColors) {
 
-  
 // }
 const form = document.querySelector('.profilecards__app');
 
 function handleFillData(ev) {
-  if(ev.target.name === 'palette'){
+  if (ev.target.name === 'palette') {
     const inputName = ev.target.name;
     const inputValue = ev.target.value;
     console.log(inputName, inputValue);
     data[inputName] = inputValue;
-  }
-  else{
+  } else {
     const inputId = ev.target.id;
     const inputValue = ev.target.value;
     console.log(inputId, inputValue);
-  
+
     data[inputId] = inputValue;
-    
   }
 
   console.log(data);
@@ -73,34 +68,28 @@ function handleFillData(ev) {
   applyColor(data);
 }
 
-function fillCard(data){
+function fillCard(data) {
   console.log('estoy aqui');
-  if(data.name !== ''){
-    cardElements[0].innerHTML = data.name;
-  }
-  else if (data.job !== ''){
+  if (data.job !== '') {
     cardElements[1].innerHTML = data.job;
-  }
-  else if(data.phone !== ''){
+  } else if (data.name !== '') {
+    cardElements[0].innerHTML = data.name;
+  } else if (data.phone !== '') {
     cardElements[2].innerHTML = data.phone;
-  }
-  else if(data.email !== ''){
+  } else if (data.email !== '') {
     cardElements[3].innerHTML = data.email;
-  }
-  else if(data.linkedin !== ''){
+  } else if (data.linkedin !== '') {
     cardElements[4].innerHTML = data.linkedin;
+  } else if (data.github !== '') {
+    let href = 'https://github.com/' + data.github;
+    cardElements[5].setAttribute('href', href);
   }
-  else if(data.github !== ''){
-    let href= 'https://github.com/' + data.github ;
-    cardElements[5].setAttribute('href', href );
-  }
-
 }
 
-function applyColor(data){
+function applyColor(data) {
   console.log('estoy en los colores');
 
-  if(data.palette === '1'){
+  if (data.palette === '1') {
     //cardName es el nombre
     cardName.classList.remove('color1');
     cardName.classList.remove('color4');
@@ -125,9 +114,7 @@ function applyColor(data){
       icon.classList.remove('color9');
       icon.classList.add('color3');
     }
-
-  }
-  else if(data.palette === '2'){
+  } else if (data.palette === '2') {
     cardName.classList.remove('color1');
     cardName.classList.remove('color4');
     cardName.classList.remove('color7');
@@ -151,8 +138,7 @@ function applyColor(data){
       icon.classList.remove('color9');
       icon.classList.add('color6');
     }
-  }
-  else if(data.palette === '3'){
+  } else if (data.palette === '3') {
     cardName.classList.remove('color1');
     cardName.classList.remove('color4');
     cardName.classList.remove('color7');
