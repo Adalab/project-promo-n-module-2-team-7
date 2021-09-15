@@ -3,7 +3,6 @@
 // elementos de HTML
 const fieldset = document.querySelectorAll('.js_fieldset'); //clase en design.html
 const collapsable = document.querySelectorAll('.js_collapsable'); //clase en header-collapsable.html
-console.log('Hola Mundo');
 
 function handleClick(ev) {
   let clickedHeader = ev.currentTarget;
