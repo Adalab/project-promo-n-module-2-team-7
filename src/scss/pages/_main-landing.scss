@@ -3,11 +3,7 @@
   @media all and (min-width: 768px) {
     height: 45%;
   }
-  // @media all and (min-width: 768px) {
-  //   height: 50%;
-  //}
 }
-
 .section__container {
   height: 100%;
   background-color: $color-main;
@@ -32,7 +28,6 @@
     font-family: $font-open;
     font-size: 14px;
     color: $dark-green-blue;
-    /*font-weight: bold; queda mejor con bold aunque no sea asi en zeplin*/
     text-align: center;
     margin: 0 28px 25px 27px;
     @media all and (min-width: 768px) {
@@ -40,7 +35,6 @@
       margin: 0 218px 50px 218px;
     }
     @media all and (min-width: 1024px) {
-      //aqui ponia min-width: 768px antes
       margin: 0 218px 20px 218px;
     }
   }
@@ -115,11 +109,10 @@
     margin: 50px auto 0px auto;
     @media all and (min-width: 768px) {
       margin: 200px auto 59px auto;
-      padding: 5px; //he añadido padding: 5px TAMBIEN cuando min-width: 768px
+      padding: 5px;
     }
     @media all and (min-width: 1024px) {
       margin: 100px auto 59px auto;
-      padding: 5px;
     }
   }
 }
