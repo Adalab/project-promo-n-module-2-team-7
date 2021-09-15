@@ -1,20 +1,10 @@
 'use strict';
 
-//elementos HTML
-// const nameElement = document.querySelector('.js_name'); //clase en fill.html en input
-// const namePreviewElement = document.querySelector('.js_preview-name'); //clase en hero.html en h2
-
-// const jobPreview = document.querySelector('.js_preview-job');
-
 const cardElements = document.querySelectorAll('.js_preview');
-
 const cardName = document.querySelector('.js-name');
 const cardRectangle = document.querySelector('.js-rectangle');
-
 const cardIcons = document.querySelectorAll('.js-icon');
-
-console.log(cardElements);
-// console.log(nameElement.value);
+const form = document.querySelector('.profilecards__app');
 
 let data = {
   palette: '',
@@ -27,23 +17,17 @@ let data = {
   photo: '',
 };
 
-const form = document.querySelector('.profilecards__app');
-
 function handleFillData(ev) {
   if (ev.target.name === 'palette') {
     const inputName = ev.target.name;
     const inputValue = ev.target.value;
-    console.log(inputName, inputValue);
     data[inputName] = inputValue;
   } else if (ev.target.name !== 'photo') {
     const inputId = ev.target.id;
     const inputValue = ev.target.value;
-    console.log(inputId, inputValue);
-
     data[inputId] = inputValue;
   }
 
-  console.log(data);
   fillCard(data);
   applyColor(data);
 }
@@ -144,7 +128,5 @@ function applyColor(data) {
     }
   }
 }
-
-// applyColor(data);
 
 form.addEventListener('change', handleFillData);
