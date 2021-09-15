@@ -24,8 +24,8 @@ const shareButton = document.querySelector('.js_share__button');
 
 //data.photo = document.querySelector('.js__profile-image').style.backgroundImage;
 
-data.photo =
-  'https://images.unsplash.com/photo-1631486508786-db15cc28296e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80';
+// data.photo =
+//   'https://images.unsplash.com/photo-1631486508786-db15cc28296e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80';
 
 function handleShareButton(ev) {
   ev.preventDefault();
@@ -40,11 +40,12 @@ function handleShareButton(ev) {
   })
     .then((response) => response.json())
     .then((data) => {
+      //debugger;
       console.log(data);
       createdCard.classList.remove('hidden');
       //   cardElement.innerHTML = data.cardURL;
       //generatedLink.innerHTML = data.cardURL;
-
+      console.log(data.photo);
       if (data.success === true) {
         shareMessage.innerHTML = 'La tarjeta ha sido creada';
         generatedLink.innerHTML = data.cardURL;

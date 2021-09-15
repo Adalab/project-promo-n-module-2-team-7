@@ -17,6 +17,7 @@ console.log(cardElements);
 // console.log(nameElement.value);
 
 let data = {
+<<<<<<< HEAD
   palette: "",
   name: "",
   job: "",
@@ -48,6 +49,19 @@ let data = {
 
 // }
 const form = document.querySelector(".profilecards__app");
+=======
+  palette: '',
+  name: '',
+  job: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: '',
+  photo: ''
+};
+
+const form = document.querySelector('.profilecards__app');
+>>>>>>> ac023b1203c06eece51aaa94096b474c35335acb
 
 function handleFillData(ev) {
   if (ev.target.name === "palette") {
@@ -55,7 +69,8 @@ function handleFillData(ev) {
     const inputValue = ev.target.value;
     console.log(inputName, inputValue);
     data[inputName] = inputValue;
-  } else {
+  } 
+  else if (ev.target.name !== 'photo') {
     const inputId = ev.target.id;
     const inputValue = ev.target.value;
     console.log(inputId, inputValue);
@@ -69,6 +84,7 @@ function handleFillData(ev) {
 }
 
 function fillCard(data) {
+<<<<<<< HEAD
   console.log("estoy aqui");
   if (data.name !== "") {
     cardElements[0].innerHTML = data.name;
@@ -83,13 +99,34 @@ function fillCard(data) {
   } else if (data.github !== "") {
     let href = "https://github.com/" + data.github;
     cardElements[5].setAttribute("href", href);
+=======
+  if (data.job !== '') {
+    cardElements[1].innerHTML = data.job;
+  } else if (data.name !== '') {
+    cardElements[0].innerHTML = data.name;
+  } else if (data.phone !== '') {
+    cardElements[3].innerHTML = data.phone;
+  } else if (data.email !== '') {
+    cardElements[4].innerHTML = data.email;
+  } else if (data.linkedin !== '') {
+    cardElements[5].innerHTML = data.linkedin;
+  } else if (data.github !== '') {
+    let href = 'https://github.com/' + data.github;
+    cardElements[6].setAttribute('href', href);
+  } else if (data.photo !== '') {
+    cardElements[2].setAttribute('style', `background-image: url(${data.photo})`);
+>>>>>>> ac023b1203c06eece51aaa94096b474c35335acb
   }
 }
 
 function applyColor(data) {
+<<<<<<< HEAD
   console.log("estoy en los colores");
 
   if (data.palette === "1") {
+=======
+  if (data.palette === '1') {
+>>>>>>> ac023b1203c06eece51aaa94096b474c35335acb
     //cardName es el nombre
     cardName.classList.remove("color1");
     cardName.classList.remove("color4");
@@ -102,7 +139,10 @@ function applyColor(data) {
     cardRectangle.classList.add("color2");
     //icons son los iconos
     for (const icon of cardIcons) {
+<<<<<<< HEAD
       console.log("entra al for");
+=======
+>>>>>>> ac023b1203c06eece51aaa94096b474c35335acb
       //color del icono
       icon.classList.remove("color1");
       icon.classList.remove("color4");
@@ -126,7 +166,10 @@ function applyColor(data) {
     cardRectangle.classList.add("color5");
     //icons son los iconos
     for (const icon of cardIcons) {
+<<<<<<< HEAD
       console.log("entra al for");
+=======
+>>>>>>> ac023b1203c06eece51aaa94096b474c35335acb
       //color del icono
       icon.classList.remove("color1");
       icon.classList.remove("color4");

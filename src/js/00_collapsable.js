@@ -11,9 +11,7 @@ function handleClick(ev) {
   let clickedHeader = ev.currentTarget;
   // console.log(clickedHeader);
   const clicked = clickedHeader.parentNode;
-  console.log(clicked);
   for (let index = 0; index < collapsable.length; index++) {
-    console.log(collapsable[index]);
     if(clickedHeader === collapsable[index]){
       fieldset[index].classList.toggle('hidden');
       collapsable[index].classList.toggle('icon-end--rotate');
